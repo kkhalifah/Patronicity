@@ -1,0 +1,19 @@
+div.patron_image {
+  margin-top: 200px;
+  background-image: url('../images/one.png');
+  border: 2px solid black;
+  width: 80%;
+  /*background-repeat: no-repeat;*/
+}
+
+div.white_box {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  width: 50%;
+}
+.info {
+  z-index: 100;
+}
