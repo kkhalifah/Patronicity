@@ -1,37 +1,30 @@
 div.patron_image {
   margin-top: 100px;
-  background-image: url('../images/patronicity_cover.jpg');
-  border: 2px solid black;
-  height: 600px;
-  /*width: 400px;*/
-
+  /*background-image: url('../images/user_static.jpg');*/
+  position: relative;
 }
 
-div.white_box {
+/*div.white_box {
   margin: 20px;
   background-color: #fff;
   border: 1px solid black;
   opacity: 0.3;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+  filter: alpha(opacity=60);
   width: 90%;
+}*/
+
+.sect {
+  width: 80%;
+  margin: 0 auto;
 }
-.info {
-  z-index: 100;
+.img-container {
+ position:relative;
+
 }
-h1.info {
-  color: blue;
-  z-index: 200;
-}
-p {
-  color: blue;
-  z-index: 110;
-}
-.red {
-  background-color: red;
-  z-index: 90;
-  display: inline;
-}
-.stuff {
-  color: white;
-  z-index: 100;
+
+.user{
+ position: absolute;
+ top: 30%;
+ text-align: center;
+ width: 100%;
 }
