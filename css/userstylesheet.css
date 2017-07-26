@@ -1,30 +1,68 @@
 div.patron_image {
   margin-top: 100px;
-  /*background-image: url('../images/user_static.jpg');*/
   position: relative;
 }
-
-/*div.white_box {
-  margin: 20px;
-  background-color: #fff;
-  border: 1px solid black;
-  opacity: 0.3;
-  filter: alpha(opacity=60);
-  width: 90%;
-}*/
-
 .sect {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .img-container {
  position:relative;
-
+ margin-top: 100px;
 }
-
+img {
+   border-radius: 15px;
+}
 .user{
  position: absolute;
- top: 30%;
+ 
  text-align: center;
- width: 100%;
+ width: 99%;
 }
+
+/*styles for tabs start*/
+.container{
+    width: 65%;
+    margin: 0 auto;
+}
+
+  h2 {
+    font-family: Aleo-Bold;
+  }
+.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background:#232C33;
+    border-bottom: 5px #CA021C solid;
+}
+.tabs li{
+    display: inline-block;
+    margin:0;
+    padding: 10px 20px 5px 20px;
+    cursor: pointer;
+    font-family: Aleo-Regular;
+    font-size:1.0em;
+    line-height:2em;
+    color:#FFF;
+}
+.tabs li:hover {
+    background:#800001;
+    }
+.tabs li.current{
+    background: #CA021C;
+    color: #FFF;
+}
+.tab-content{
+    display: none;
+    background: #DADFF7;
+    padding: 15px;
+    font-family: Aleo-Light;
+    font-size:1.0em;
+    line-height:1.4;
+
+}
+.tab-content.current{
+    display: inherit;
+}
+/*END styles for tabs*/
