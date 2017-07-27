@@ -15,7 +15,7 @@ img {
 }
 .user{
  position: absolute;
- 
+
  text-align: center;
  width: 99%;
 }
@@ -27,7 +27,8 @@ img {
 }
 
   h2 {
-    font-family: Aleo-Bold;
+    /*font-family: Aleo-Bold;*/
+    margin-top: 10px;
   }
 .tabs{
     margin: 0px;
@@ -66,3 +67,12 @@ img {
     display: inherit;
 }
 /*END styles for tabs*/
+.face {
+  float: right;
+  border-radius: 50%;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.edit {
+margin: 10px;
+}
