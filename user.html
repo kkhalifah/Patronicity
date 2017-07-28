@@ -188,117 +188,72 @@
 
                     <div id="tab-2" class="tab-content">
                         <h2>Credit Cards</h2>
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+	                             <th>Description</th>
+	                              <th>Actions</th>
+                            </tr></thead>
+                            <tbody>
+                              <tr>
+                                <td>123456789</td>
+                                <td>Visa</td>
+                              </tr>
+                              <tr>
+                                <td>987654321</td>
+                                <td>Master Card</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- start -->
+                          <a href="#signupModal" data-toggle="modal" class=""><button class="icon-user btn btn-success" type="button" name="button">Add a Card</button><i class="icon-sort-down"></i></a>
 
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">×</button>
-                          <h4><span class="glyphicon glyphicon-user "></span> Edit My Profile</h4>
-                        </div>
-                        <div class="modal-body">
-                          <form role="form">
-                            <div class="form-group">
 
-                              <label for="psw"><span class="glyphicon glyphicon-pencil"></span> Name: </label>
-                              <input type="text" class="form-control" id="fname" placeholder="First Name">
-                              <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Address: </label>
-                              <input type="text" class="form-control" id="address" placeholder="Street Address">
-                              <input type="text" class="form-control" id="city" placeholder="City">
-                              <!-- dropdown state -->
-                              <div class="form-group">
-                             	<label for="state" class="control-label"><span class="glyphicon glyphicon-home"></span> State: </label>
-                             	<div class="">
-                             		<select class="form-control" id="state" name="state">
-                             			<option value="">N/A</option>
-                             			<option value="AK">Alaska</option>
-                             			<option value="AL">Alabama</option>
-                             			<option value="AR">Arkansas</option>
-                             			<option value="AZ">Arizona</option>
-                             			<option value="CA">California</option>
-                             			<option value="CO">Colorado</option>
-                             			<option value="CT">Connecticut</option>
-                             			<option value="DC">District of Columbia</option>
-                             			<option value="DE">Delaware</option>
-                             			<option value="FL">Florida</option>
-                             			<option value="GA">Georgia</option>
-                             			<option value="HI">Hawaii</option>
-                             			<option value="IA">Iowa</option>
-                             			<option value="ID">Idaho</option>
-                             			<option value="IL">Illinois</option>
-                             			<option value="IN">Indiana</option>
-                             			<option value="KS">Kansas</option>
-                             			<option value="KY">Kentucky</option>
-                             			<option value="LA">Louisiana</option>
-                             			<option value="MA">Massachusetts</option>
-                             			<option value="MD">Maryland</option>
-                             			<option value="ME">Maine</option>
-                             			<option value="MI">Michigan</option>
-                             			<option value="MN">Minnesota</option>
-                             			<option value="MO">Missouri</option>
-                             			<option value="MS">Mississippi</option>
-                             			<option value="MT">Montana</option>
-                             			<option value="NC">North Carolina</option>
-                             			<option value="ND">North Dakota</option>
-                             			<option value="NE">Nebraska</option>
-                             			<option value="NH">New Hampshire</option>
-                             			<option value="NJ">New Jersey</option>
-                             			<option value="NM">New Mexico</option>
-                             			<option value="NV">Nevada</option>
-                             			<option value="NY">New York</option>
-                             			<option value="OH">Ohio</option>
-                             			<option value="OK">Oklahoma</option>
-                             			<option value="OR">Oregon</option>
-                             			<option value="PA">Pennsylvania</option>
-                             			<option value="PR">Puerto Rico</option>
-                             			<option value="RI">Rhode Island</option>
-                             			<option value="SC">South Carolina</option>
-                             			<option value="SD">South Dakota</option>
-                             			<option value="TN">Tennessee</option>
-                             			<option value="TX">Texas</option>
-                             			<option value="UT">Utah</option>
-                             			<option value="VA">Virginia</option>
-                             			<option value="VT">Vermont</option>
-                             			<option value="WA">Washington</option>
-                             			<option value="WI">Wisconsin</option>
-                             			<option value="WV">West Virginia</option>
-                             			<option value="WY">Wyoming</option>
-                             		</select>
-                             	</div>
-                             </div>
-                             <!-- state dropdown END -->
-                              <input type="text" class="form-control" id="zip" placeholder="Zip code">
-                            </div>
-                            <div class="form-group">
-                              <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email:</label>
-                              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                              <label for="phone"><span class="glyphicon glyphicon-phone"></span> Phone:</label>
-                              <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number">
-                            </div>
-                            <fieldset id="user_password" class="password"><label for=""><span class="glyphicon glyphicon-lock"></span> Change Password</label><div class="form-group"><label for="old password">Old Password:</label> <input type="password" name="old password" value="" id="old_password" autocomplete="off" class="form-control"></div>
-                              <div class="form-group"><label for="password">Password:</label> <input type="password" name="password" value="" id="password" autocomplete="off" class="form-control"></div><div class="form-group"><label class="control-label span3" for="confirm password">Confirm Password:</label> <input type="password" name="confirm password" value="" id="confirm_password" autocomplete="off" class="form-control">
-                               </div>
-                            </fieldset>
-                              <button type="submit" class="btn btn-block"> Save Changes
-                                <span class="glyphicon glyphicon-save-file"></span>
-                              </button>
-                          </form>
+                <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                               <h3 class="modal-title text-center" id="myModalLabel">Store A New Card</h3>
+
+                          </div>
+                  <div class="modal-body">
+                      <div class="row text-center">
+                          <form class="col-md-10 col-md-offset-1" style="padding:0">
+                              <div class="form-group col-md-12">
+                                  <input type="text" class="form-control" id="signupEmail1" placeholder="Card Number" contenteditable="false">
+                              </div>
+                            <p>Expiration</p>
+                              <div class="form-group col-md-6">
+                                  <input type="text" class="form-control" id="signupPassword" placeholder="Month" contenteditable="false">
+                              </div>
+                              <div class="form-group col-md-6">
+                                  <input type="text" class="form-control" id="signupPassword" placeholder="Year" contenteditable="false">
+                              </div>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="access-code" placeholder="Premier Access Code">
+                                </div>
+                              <div class="clearfix"></div>
+                            </form>
                         </div>
-                        <div class="modal-footer">
-                          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                            <span class="glyphicon glyphicon-remove"></span> Cancel
-                          </button>
+                        <div class="row text-center">
+                          <hr>
+                            <button type="button" class="btn btn-success col-md-8 col-md-offset-2">Save Card</button>
+                            <br class="">
                         </div>
-                      </div>
                     </div>
+                </div>
+            </div>
+          </div>
+          <!-- end -->
+
                     </div>
+
+
 
                     <div id="tab-3" class="tab-content">
                       <h2>Tab Three</h2>
-
-                        <p>If you think we're gonna make it, you better hang on to yourself. If she says she can do it, then she can do it, she don't make false claims. Last night they loved you, opening doors and pulling some strings. Don't kid yourself they belong to you, they're the start of a coming race. Don't you wonder sometimes, 'bout sound and vision? </p>
+                    <p>stuff</p>
                     </div>
 
                     <div id="tab-4" class="tab-content">
