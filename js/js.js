@@ -25,4 +25,16 @@ $(document).ready(function(){
         $(this).addClass('current');
         $("#"+tab_id).addClass('current');
     });
+
+    //dropdown
+//     $(function(){
+//
+//   $(".dropdown-menu li a").click(function(){
+//
+//     $(".btn:first-child").text($(this).text());
+//      $(".btn:first-child").val($(this).text());
+//   });
+//
+// });
+
 });

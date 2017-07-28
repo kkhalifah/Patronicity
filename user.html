@@ -167,7 +167,7 @@
                            <div class="form-group"><label for="password">Password:</label> <input type="password" name="password" value="" id="password" autocomplete="off" class="form-control"></div><div class="form-group"><label class="control-label span3" for="confirm password">Confirm Password:</label> <input type="password" name="confirm password" value="" id="confirm_password" autocomplete="off" class="form-control">
                             </div>
                          </fieldset>
-                           <button type="submit" class="btn btn-block"> Save Changes
+                           <button type="submit" class="btn btn-block btn-success"> Save Changes
                              <span class="glyphicon glyphicon-save-file"></span>
                            </button>
                        </form>
@@ -206,14 +206,14 @@
                             </tbody>
                           </table>
                           <!-- start -->
-                          <a href="#signupModal" data-toggle="modal" class=""><button class="icon-user btn btn-success" type="button" name="button">Add a Card</button><i class="icon-sort-down"></i></a>
+                          <a href="#signupModal" data-toggle="modal" class=""><button class="icon-user btn btn-success" type="submit" name="button">Add a Card</button><i class="icon-sort-down"></i></a>
 
 
                 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
                   <div class="modal-dialog modal-sm">
                       <div class="modal-content">
                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                              <button type="submit" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                <h3 class="modal-title text-center" id="myModalLabel">Add A New Card</h3>
 
                           </div>
@@ -243,7 +243,7 @@
                         </div>
                         <div class="row text-center">
                           <hr>
-                            <button type="button" class="btn btn-success col-md-8 col-md-offset-2">Save Card</button>
+                            <button type="submit" class="btn btn-success col-md-8 col-md-offset-2">Save Card</button>
                             <br class="">
                         </div>
                     </div>
@@ -257,7 +257,7 @@
 
                     <div id="tab-3" class="tab-content">
                       <h2>Donations</h2>
-                          <table class="table table-striped">
+                          <table class="table table-striped table-responsive">
                             <thead>
                               <tr>
                                  <th>Campaign</th>
@@ -268,56 +268,72 @@
                                 <tr>
                                   <td>Campaign #1</td>
                                   <td>$50.00 USD</td>
-                                  <td>Created: <br>
-                                    Charged
-                                    <p>display as: </p>
+                                  <td>
+                                    <p>Charged:</p>
+                                    <p>Display as: </p>
+                                    <button class="btn btn-success" type="button" name="button">Edit Display</button>
+                                    <button class="btn btn-success" type="button" name="button">Resend Receipt</button>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>987654321</td>
-                                  <td>Master Card</td>
+                                  <td>Campaign #2</td>
+                                  <td>$25.00 USD</td>
+                                  <td>
+                                    <p>Charged:</p>
+                                    <p>Display as: </p>
+                                    <button class="btn btn-success" type="button" name="button">Edit Display</button>
+                                    <button class="btn btn-success" type="button" name="button">Resend Receipt</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Campaign #3</td>
+                                  <td>$100.00 USD</td>
+                                  <td>
+                                    <p>Charged:</p>
+                                    <p>Display as: </p>
+                                    <button class="btn btn-success" type="button" name="button">Edit Display</button>
+                                    <button class="btn btn-success" type="button" name="button">Resend Receipt</button>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
                             <!-- start -->
-                            <a href="#signupModal" data-toggle="modal" class=""><button class="icon-user btn btn-success" type="button" name="button">Add a Card</button><i class="icon-sort-down"></i></a>
+                            <a href="#donationModal" data-toggle="modal" class=""><button class="icon-user btn btn-success" type="button" name="button">Make a Donation</button><i class="icon-sort-down"></i></a>
 
 
-                  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+                  <div class="modal fade" id="donationModal" tabindex="-1" role="dialog" aria-labelled by="donationModal" aria-hidden="true">
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                 <h3 class="modal-title text-center" id="myModalLabel">Add A New Card</h3>
+                                 <h3 class="modal-title text-center" id="myModalLabel">Make a Donation:</h3>
 
                             </div>
                     <div class="modal-body">
                         <div class="row text-center">
                             <form class="col-md-10 col-md-offset-1" style="padding:0">
-                              <p>Name:</p>
-                              <div class="form-group col-md-12">
-                                  <input type="text" class="form-control" id="" placeholder="Name on Card" contenteditable="false">
-                              </div>
-                              <p>Card Numer:</p>
+                              <p> Choose a Campaign:</p>
+                              <div class="dropdown">
+    <button class="btn btn-warning dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choose a Campaign
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation" selected><a role="menuitem" tabindex="-1" href="#">Campaign #1</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Campaign #2</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Campaign #3</a></li>
+      <li role="presentation" class=""></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Campaign #4</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Campaign #5</a></li>
+    </ul>
+  </div>
+                              <p>Amount:</p>
                                 <div class="form-group col-md-12">
-                                    <input type="text" class="form-control" id="" placeholder="Valid Card Number" contenteditable="false">
+                                    <input type="number" class="form-control" id="" placeholder="Amount of Donation" contenteditable="false">
                                 </div>
-                              <p>Expiration</p>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="signupPassword" placeholder="Month" contenteditable="false">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="signupPassword" placeholder="Year" contenteditable="false">
-                                </div>
-                                  <div class="form-group col-md-12">
-                                      <input type="text" class="form-control" id="access-code" placeholder="CV Code">
-                                  </div>
-                                <div class="clearfix"></div>
                               </form>
                           </div>
                           <div class="row text-center">
                             <hr>
-                              <button type="button" class="btn btn-success col-md-8 col-md-offset-2">Save Card</button>
+                              <button type="submit" class="btn btn-success col-md-8 col-md-offset-2">Donate!</button>
                               <br class="">
                           </div>
                       </div>
