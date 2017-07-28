@@ -214,14 +214,19 @@
                       <div class="modal-content">
                           <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                               <h3 class="modal-title text-center" id="myModalLabel">Store A New Card</h3>
+                               <h3 class="modal-title text-center" id="myModalLabel">Add A New Card</h3>
 
                           </div>
                   <div class="modal-body">
                       <div class="row text-center">
                           <form class="col-md-10 col-md-offset-1" style="padding:0">
+                            <p>Name:</p>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" id="" placeholder="Name on Card" contenteditable="false">
+                            </div>
+                            <p>Card Numer:</p>
                               <div class="form-group col-md-12">
-                                  <input type="text" class="form-control" id="signupEmail1" placeholder="Card Number" contenteditable="false">
+                                  <input type="text" class="form-control" id="" placeholder="Valid Card Number" contenteditable="false">
                               </div>
                             <p>Expiration</p>
                               <div class="form-group col-md-6">
@@ -231,7 +236,7 @@
                                   <input type="text" class="form-control" id="signupPassword" placeholder="Year" contenteditable="false">
                               </div>
                                 <div class="form-group col-md-12">
-                                    <input type="text" class="form-control" id="access-code" placeholder="Premier Access Code">
+                                    <input type="text" class="form-control" id="access-code" placeholder="CV Code">
                                 </div>
                               <div class="clearfix"></div>
                             </form>
@@ -250,10 +255,76 @@
                     </div>
 
 
-
                     <div id="tab-3" class="tab-content">
-                      <h2>Tab Three</h2>
-                    <p>stuff</p>
+                      <h2>Donations</h2>
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                 <th>Campaign</th>
+                                  <th>Donation</th>
+                                  <th>Status</th>
+                              </tr></thead>
+                              <tbody>
+                                <tr>
+                                  <td>Campaign #1</td>
+                                  <td>$50.00 USD</td>
+                                  <td>Created: <br>
+                                    Charged
+                                    <p>display as: </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>987654321</td>
+                                  <td>Master Card</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- start -->
+                            <a href="#signupModal" data-toggle="modal" class=""><button class="icon-user btn btn-success" type="button" name="button">Add a Card</button><i class="icon-sort-down"></i></a>
+
+
+                  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                 <h3 class="modal-title text-center" id="myModalLabel">Add A New Card</h3>
+
+                            </div>
+                    <div class="modal-body">
+                        <div class="row text-center">
+                            <form class="col-md-10 col-md-offset-1" style="padding:0">
+                              <p>Name:</p>
+                              <div class="form-group col-md-12">
+                                  <input type="text" class="form-control" id="" placeholder="Name on Card" contenteditable="false">
+                              </div>
+                              <p>Card Numer:</p>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="" placeholder="Valid Card Number" contenteditable="false">
+                                </div>
+                              <p>Expiration</p>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="signupPassword" placeholder="Month" contenteditable="false">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="signupPassword" placeholder="Year" contenteditable="false">
+                                </div>
+                                  <div class="form-group col-md-12">
+                                      <input type="text" class="form-control" id="access-code" placeholder="CV Code">
+                                  </div>
+                                <div class="clearfix"></div>
+                              </form>
+                          </div>
+                          <div class="row text-center">
+                            <hr>
+                              <button type="button" class="btn btn-success col-md-8 col-md-offset-2">Save Card</button>
+                              <br class="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- end -->
                     </div>
 
                     <div id="tab-4" class="tab-content">
