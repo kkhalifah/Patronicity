@@ -1,28 +1,25 @@
 div.patron_image {
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
 }
 .sect {
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
 }
 .img-container {
  position:relative;
- margin-top: 100px;
 }
 img {
-   border-radius: 15px;
+   border-radius: 5px;
 }
 .user{
  position: absolute;
-
  text-align: center;
  width: 99%;
 }
-
 /*styles for tabs start*/
 .container{
-    width: 65%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -70,9 +67,26 @@ img {
 .face {
   float: right;
   border-radius: 50%;
-  width: 30%;
-  margin-bottom: 20px;
+  width: 40%;
+  margin-top: -10px;
+
 }
 .edit {
-margin: 10px;
+  margin: 10px;
 }
+.form-control {
+    width: 99%;
+    height: 34px;
+    padding: 6px 12px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .photo {
+    float: right;
+    right: 0;
+    bottom: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }

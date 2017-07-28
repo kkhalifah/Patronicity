@@ -1,3 +1,6 @@
+body {
+  padding-top: 70px;
+ }
 .container-fluid {
      padding: 5px;
  }
@@ -5,9 +8,7 @@
      text-align: center;
      margin: 15px 0;
    }
-   .name {
-     margin-top: 60px;
-   }
+  
    /*section images six panels 2 rows of three*/
  .sect {
    width: 80%;
@@ -15,10 +16,16 @@
 .img-container {
   position:relative;
 }
-
+.face {
+  float: right;
+  border-radius: 50%;
+  width: 30%;
+  margin-top: 40px;
+  position: relative;
+}
 .head {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 0;
   text-align: center;
   width: 100%;
