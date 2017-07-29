@@ -1,5 +1,6 @@
 body {
   padding-top: 70px;
+  font-family: roboto, sans-serif;
  }
 .container-fluid {
      padding: 5px;
@@ -8,7 +9,7 @@ body {
      text-align: center;
      margin: 15px 0;
    }
-  
+
    /*section images six panels 2 rows of three*/
  .sect {
    width: 80%;

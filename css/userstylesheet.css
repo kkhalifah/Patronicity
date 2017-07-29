@@ -1,3 +1,7 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
 div.patron_image {
   margin-top: 50px;
   position: relative;
@@ -24,38 +28,37 @@ img {
 }
 
   h2 {
-    /*font-family: Aleo-Bold;*/
     margin-top: 10px;
   }
 .tabs{
     margin: 0px;
     padding: 0px;
     list-style: none;
-    background:#232C33;
-    border-bottom: 5px #CA021C solid;
+    background:#00C851;
+    border-bottom: 5px #FF8800 solid;
 }
 .tabs li{
     display: inline-block;
     margin:0;
     padding: 10px 20px 5px 20px;
     cursor: pointer;
-    font-family: Aleo-Regular;
+    font-family: roboto, sans-serif;
     font-size:1.0em;
     line-height:2em;
     color:#FFF;
 }
 .tabs li:hover {
-    background:#800001;
+    background:#007E33;
     }
 .tabs li.current{
-    background: #CA021C;
+    background: #007E33;
     color: #FFF;
 }
 .tab-content{
     display: none;
-    background: #DADFF7;
+    background: #f5f5f5;
     padding: 15px;
-    font-family: Aleo-Light;
+    font-family: roboto, sans-serif;
     font-size:1.0em;
     line-height:1.4;
 
